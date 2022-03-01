@@ -131,19 +131,19 @@ There are two ways of customizing your website. You can either:
 
 ### Update your repository description and link your website
 
-At the top of your repository on GitHub you'll see
+~~At the top of your repository on GitHub you'll see~~
 
 ~~~
 No description, website, or topics provided. — Edit
 ~~~
 
-Click 'Edit' and add:
+~~Click 'Edit' and add:~~
 
-1.  A very brief description of your workshop in the "Description" box (e.g., "Oomza University workshop, Dec. 2016")
+~~1.  A very brief description of your workshop in the "Description" box (e.g., "Oomza University workshop, Dec. 2016")~~
 
-2.  The URL for your workshop in the "Website" box (e.g., `https://gvwilson.github.io/2016-12-01-oomza`)
+~~2.  The URL for your workshop in the "Website" box (e.g., `https://gvwilson.github.io/2016-12-01-oomza`)~~
 
-This will help people find your website if they come to your repository's home page.
+~~This will help people find your website if they come to your repository's home page.~~
 
 ### Update the content of the README file
 
