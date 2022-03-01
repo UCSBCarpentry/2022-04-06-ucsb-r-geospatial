@@ -70,7 +70,6 @@ are not using Eventbrite, or leave it in, since it will not be
 displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 {% if page.eventbrite %}
-<h3>Registration for this workshop opens on March 16, 2022 at 8:00 am. Please check back closer to the registration period for more details.</h3>
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
 <iframe
@@ -84,6 +83,8 @@ displayed if the 'eventbrite' field in the header is not set.
 
 
 <h2 id="general">General Information</h2>
+
+<h3>Registration for this workshop opens on March 16, 2022 at 8:00 am. Please check back closer to the registration period for more details.</h3>
 
 {% comment %}
 INTRODUCTION
