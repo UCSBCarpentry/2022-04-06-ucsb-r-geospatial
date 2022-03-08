@@ -409,7 +409,7 @@ please preview your site before committing, and make sure to run
   Library Carpentry
   {% endif %}
   workshop,
-  you will need access to software as described on this page: <a href= "https://ucsbcarpentry.github.io/2022-04-06-ucsb-r-geospatial/setup.html">Setup Page</a>.
+  you will need access to software as described on this page: <a href= "https://ucsbcarpentry.github.io/2022-04-06-ucsb-r-geospatial/setup.html"><strong>Setup Page</strong></a>.
   In addition, you will need an up-to-date web browser.
 </p>
 <p>
@@ -435,7 +435,7 @@ to include the relevant installation instrucctions.
 {% comment %}
 These are the installation instructions for the tools used
 during the workshop.
-{% endcomment %}
+
 
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
@@ -448,3 +448,4 @@ Please check the "Setup" page of
 [the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
+{% endcomment %}
