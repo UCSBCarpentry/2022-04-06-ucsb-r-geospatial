@@ -5,35 +5,9 @@
 This repository is for UCSB Carpentry R Geospatial (April 7, 2022), using The Carpentries' ([Software Carpentry][swc-site], [Data Carpentry][dc-site], and
 [Library Carpentry][lc-site]'s) template for creating websites for workshops. Steps that have been completed are striked through.
 
-1. **Please _do not fork this repository directly on GitHub._** Instead, please use GitHub's
-   "template" function following [the instructions below](#creating-a-repository) to copy this
-   `workshop-template` repository and customize it for your workshop.
-
-2. Please *do your work in your repository's `gh-pages` branch*, since that is what is
+2. Please *do your work directly in the repository's `gh-pages` branch*, since that is what is
    [automatically published as a website by GitHub][github-project-pages].
 
-3. Once you are done, please also [let us know][email] the workshop URL. If this is a self-organised
-   workshop, you should also [fill in the self-organized workshop
-   form][self-organized-workshop-form] (if you have not already done so), so we can keep track of
-   all workshops. We build the list of workshops on our websites from the data included in your
-   `index.md` page. We can only do that if you [customize][customization] that page correctly *and*
-   let us know the workshop URL.
-
-If you run into problems,
-or have ideas about how to make this process simpler,
-please [get in touch](#getting-and-giving-help).
-The pages on [customizing your website][customization],
-the [FAQ][faq],
-and the [design notes][design] have more detail on what we do and why.
-And please note:
-if you are teaching Git,
-please [create a separate repository](#setting-up-a-separate-repository-for-learners)
-for your learners to practice in.
-
-## Video Tutorial
-
-There is a [YouTube video](https://www.youtube.com/watch?v=_Ag1JiZzyUQ) that demonstrates how to
-create a workshop website.
 
 ## Creating a Repository
 
@@ -122,6 +96,7 @@ There are two ways of customizing your website. You can either:
     Editing hints are embedded in `_config.yml`,
     and full instructions are in [the customization instructions][customization].
 
+*** this needs to be done!!!
 5. Edit the `schedule.html` file to edit the schedule for your upcoming workshop. This file is
    located in the `_includes` directory, make sure to choose the one from the appropriate `dc` (Data
    Carpentry workshop), `lc` (Library Carpentry), or `swc` (Software Carpentry) subdirectory.
@@ -144,11 +119,6 @@ No description, website, or topics provided. — Edit
 ~~2.  The URL for your workshop in the "Website" box (e.g., `https://gvwilson.github.io/2016-12-01-oomza`)~~
 
 ~~This will help people find your website if they come to your repository's home page.~~
-
-### Update the content of the README file
-
-You can change the `README.md` file in your website's repository, which contains these instructions,
-so that it contains a short description of your workshop and a link to the workshop website.
 
 
 ## Additional Notes
@@ -174,6 +144,8 @@ you may want to add extra pages to your workshop website.
 You can do this by putting either Markdown or HTML pages in the website's root directory
 and styling them according to the instructions give in
 [the lesson template][lesson-example].
+
+There ARE extras for this lesson. How do we light them up?
 
 
 ## Installing Software
