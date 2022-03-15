@@ -17,7 +17,6 @@ objectives:
 keypoints:
 - "The GeoTIFF file format includes metadata about the raster data." 
 - "To plot raster data with the `ggplot2` package, we need to convert it to a dataframe."
-- "R stores CRS information in the Proj4 format."
 - "Be careful when dealing with missing or bad data values."
 source: Rmd
 ---
@@ -320,23 +319,6 @@ elements that R or another GIS might need. Each element is specified with a
 each `+` we see the CRS element being defined. For example projection (`proj=`)
 and datum (`datum=`).
 
-### UTM Proj4 String
-Our projection string for `DSM_HARV` specifies the UTM projection as follows:
-
-`+proj=utm +zone=18 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0`
-
-* **proj=utm:** the projection is UTM, UTM has several zones.
-* **zone=18:** the zone is 18
-* **datum=WGS84:** the datum is WGS84 (the datum refers to the  0,0 reference for
-the coordinate system used in the projection)
-* **units=m:** the units for the coordinates are in meters
-* **ellps=WGS84:** the ellipsoid (how the earth's  roundness is calculated) for
-the data is WGS84
-
-Note that the zone is unique to the UTM projection. Not all CRSs will have a
-zone. Image source: Chrismurf at English Wikipedia, via [Wikimedia Commons](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#/media/File:Utm-zones-USA.svg) (CC-BY).
-
-![The UTM zones across the continental United States. From: https://upload.wikimedia.org/wikipedia/commons/8/8d/Utm-zones-USA.svg](../images/Utm-zones-USA.svg)
 
 ## Calculate Raster Min and Max Values
 
@@ -387,7 +369,7 @@ maxValue(DSM_HARV)
 {: .callout}
 
 We can see that the elevation at our site ranges from 305.0700073m to
-416.0699768m.
+416.0699768m. For mountainous Massachusetts, that passes the smell test.
 
 ## Raster Bands
 The Digital Surface Model object (`DSM_HARV`) that we've been working with is a
