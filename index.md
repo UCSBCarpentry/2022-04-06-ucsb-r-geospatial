@@ -361,7 +361,6 @@ of code below the Schedule `<h2>` header below with
 
 A precise schedule is yet to be established, please check back closter to the start of the workshop. The workshop will include regular breaks. Please [contact the workshop organisers](#contact) if you would like more information about the planned schedule.
 
-{% comment %}
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
@@ -372,7 +371,6 @@ A precise schedule is yet to be established, please check back closter to the st
 This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
 Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
 {% endif %}
-{% endcomment %}
 
 
 {% comment %}
