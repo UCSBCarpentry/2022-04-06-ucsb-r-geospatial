@@ -43,7 +43,7 @@ Digital Terrain Model (DTM, ground level). The resulting dataset is referred to
 as a Canopy Height Model (CHM) and represents the actual height of trees,
 buildings, etc. with the influence of ground elevation removed.
 
-![Source: National Ecological Observatory Network (NEON)](../images/dc-spatial-raster/lidarTree-height.png) 
+![Source: National Ecological Observatory Network (NEON)](../img/lidarTree-height.png) 
 
 > ## More Resources
 > * Check out more on LiDAR CHM, DTM and DSM in this NEON Data Skills overview tutorial:
