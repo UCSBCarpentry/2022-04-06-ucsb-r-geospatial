@@ -36,6 +36,11 @@ It also covers how to layer a raster on top of a hillshade to produce
 an eloquent map. We will continue working with the Digital Surface Model (DSM) raster
 for the NEON Harvard Forest Field Site. 
 
+At the end of this lesson, we will have made this map:
+
+<img src="../fig/rmd-02-overlay-hillshade-1.png" title="plot of chunk overlay-hillshade" alt="plot of chunk overlay-hillshade" width="612" style="display: block; margin: auto;" />
+
+
 ## Plotting Data Using Breaks
 In the previous episode, we viewed our data using a continuous color ramp. For 
 clarity and visibility of the plot, we may prefer to view the data "symbolized" or colored according to ranges of values. This is comparable to a "classified"
