@@ -289,7 +289,9 @@ ggplot() +
 We can layer a raster on top of a hillshade raster for the same area, and use a
 transparency factor to create a 3-dimensional shaded effect. A
 hillshade is a raster that maps the shadows and texture that you would see from
-above when viewing terrain.
+above when viewing terrain. In our example, the texture will actually be
+treetops.
+
 We will add a custom color, making the plot grey. 
 
 First we need to read in our DSM hillshade data and view the structure:
