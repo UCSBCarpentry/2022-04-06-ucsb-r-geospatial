@@ -130,13 +130,13 @@ defaults:
       root: .
       layout: page
   - scope:
-      path: "."
+      path: ""
       type: episodes
     values:
       root: ..
       layout: episode
   - scope:
-      path: "extras"
+      path: ""
       type: extras
     values:
       root: ..
