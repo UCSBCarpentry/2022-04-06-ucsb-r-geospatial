@@ -326,6 +326,8 @@ It is useful to know the minimum or maximum values of a raster dataset. In this
 case, given we are working with elevation data, these values represent the
 min/max elevation range at our site.
 
+We already saw this in str(). This is an alternate method.
+
 Raster statistics are often calculated and embedded in a GeoTIFF for us. We
 can view these values:
 
