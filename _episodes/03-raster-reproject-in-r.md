@@ -9,8 +9,8 @@ objectives:
 - "Reproject a raster in R."
 questions: 
 - "How do I work with raster data sets that are in different projections?"
-teaching: 40
-exercises: 20
+teaching: 10
+exercises: 10
 source: Rmd
 ---
 
