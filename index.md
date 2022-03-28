@@ -270,6 +270,8 @@ Edit the text to match who can attend the workshop. For instance:
 
 <hr/>
 
+{% include people.html %}
+
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}
@@ -450,5 +452,3 @@ Please check the "Setup" page of
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
 {% endcomment %}
-
-{% include people.md %}
