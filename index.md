@@ -450,3 +450,5 @@ Please check the "Setup" page of
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
 {% endcomment %}
+
+{% include swc/people.md %}
