@@ -1,6 +1,6 @@
 # Overview
 
-This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data. We provide instructions below to either install all components manually.
+This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data. We provide instructions below to either install all components manually. <strong>If applicable:  before you install the software, <strong>please log out of any external drives (e.g. google drive, onedrive, dropbox, etc.) on your device.</strong>
 
 ## Data
 
@@ -39,15 +39,16 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 
 > ## macOS - Install with Packages (Beginner)
 >
-> The simplest way to install these geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.
+> The simplest way to install these geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.  Please install all items in the package.
 >
-> After downloading the package in the link above, you will need to double-click the cardbord box icon to complete the installation. Depending on your security settings, you may get an error message about "unidentified developers". You can enable the installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443) for installing programs from unidentified developers.
+> After downloading the package in the link above, you will need to double-click the cardbord box icon to complete the installation. Depending on your security settings, you may get a warning message about "unidentified developers", but you may continue with the installation. Please [contact us](mailto:library-collaboratory@ucsb.edu) or attend the workshop install party if you need help enabling the installation.
 >
 {: .solution}
 
 > ## macOS - Install with Homebrew (Advanced)
 >
-> Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually using [homebrew](https://brew.sh):
+> Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually using [homebrew](https://brew.sh).
+> We do not have the expertise to provide assistance on your installation using this method.
 >
 >~~~
 >$ brew tap osgeo/osgeo4mac && brew tap --repair
