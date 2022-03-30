@@ -2,14 +2,15 @@
 
 This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data. We provide instructions below to either install all components manually. <strong>If applicable:  before you install the software, <strong>please log out of any external drives (e.g. google drive, onedrive, dropbox, etc.) on your device.</strong>
 
+After you have finished installing the data and software: To check that you have everything configured correctly, and that you are prepared for the workshop, please download this [zip archive](https://drive.google.com/file/d/19y6-R_mob8Nij-ItWW5Iaf7ulvqFVP_w/view?usp=sharing). Extract the files to your local computer. RESTART RStudio. Doubleclick on InstallTest.r
+  
 ## Data
 
 You can download all of the data used in this workshop by clicking
 [this download link](https://ndownloader.figshare.com/articles/2009586/versions/10). The file is 218.2 MB.
 
 Clicking the download link will automatically download all of the files to your default download directory as a single compressed
-(`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder
-application).
+(`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder application).
 
 For a full description of the data used in this workshop see the [data page](https://github.com/datacarpentry/geospatial-workshop/blob/gh-pages/data).
 
