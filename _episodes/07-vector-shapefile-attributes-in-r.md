@@ -254,20 +254,18 @@ lines_HARV$TYPE
 {: .output}
 
 To see only unique values within the `TYPE` field, we can use the
-`levels()` function for extracting the possible values of a
-categorical variable. The special term for categorical variables
-within R is factor. We worked with factors a little bit in [an earlier lesson](https://datacarpentry.org/r-intro-geospatial/03-data-structures-part1/index.html).
+`unique()` function for extracting the possible values of a variable.
 
 
 ~~~
-levels(lines_HARV$TYPE)
+unique(lines_HARV$TYPE)
 ~~~
 {: .language-r}
 
 
 
 ~~~
-NULL
+"woods road" "footpath"   "stone wall" "boardwalk" 
 ~~~
 {: .output}
 
@@ -421,18 +419,18 @@ Note in the above example we have
 1. a vector of colors - one for each factor value (unique attribute value)
 2. the attribute itself (`[object$factor]`) of class factor.
 
-First we will check how many unique levels our factor has:
+First we will check how many unique values our factor has:
 
 
 ~~~
-levels(lines_HARV$TYPE)
+unique(lines_HARV$TYPE)
 ~~~
 {: .language-r}
 
 
 
 ~~~
-NULL
+"woods road" "footpath"   "stone wall" "boardwalk" 
 ~~~
 {: .output}
 
@@ -464,7 +462,7 @@ ggplot() +
 We adjusted line width universally earlier. If we want a unique line width for each factor level or attribute category
 in our spatial object, we can use the same syntax that we used for colors, above.
 
-We already know that we have four different `TYPE` levels in the lines_HARV object, so we will set four different line widths.
+We already know that we have four different `TYPE` values in the lines_HARV object, so we will set four different line widths.
 
 
 ~~~
@@ -488,12 +486,12 @@ ggplot() +
 
 <img src="../fig/rmd-07-harv-paths-map-wide-1.png" title="Roads and trails in the area demonstrating how to use different line thickness and colors." alt="Roads and trails in the area demonstrating how to use different line thickness and colors." width="612" style="display: block; margin: auto;" />
 
-Note that we could also use `aes(size = TYPE)` to tie the line thickness to the TYPE variable, so long as we had been careful to set factor levels appropriately. ggplot prints a warning when you do this, because it is not considered a good practice to plot non-spatial data this way.
+Note that we could also use `aes(size = TYPE)` to tie the line thickness to the TYPE variable. ggplot prints a warning when you do this, because it is not considered a good practice to plot non-spatial data this way.
 
 > ## Challenge: Plot Line Width by Attribute
 > 
 > In the example above, we set the line widths to be 1, 2, 3, and 4.
-> Because R orders factor levels alphabetically by default,
+> Because R orders values alphabetically by default,
 > this gave us a plot where woods roads (the last factor level)
 > were the thickest and boardwalks were the thinnest.
 >
@@ -507,24 +505,24 @@ Note that we could also use `aes(size = TYPE)` to tie the line thickness to the 
 > 
 > > ## Answers
 > > 
-> > First we need to look at the levels of our factor to see
+> > First we need to look at the unique values of our data to see
 > > what order the road types are in:
 > >
 > > 
 > > ~~~
-> > levels(lines_HARV$TYPE)
+> > unique(lines_HARV$TYPE)
 > > ~~~
 > > {: .language-r}
 > > 
 > > 
 > > 
 > > ~~~
-> > NULL
+> > "woods road" "footpath"   "stone wall" "boardwalk" 
 > > ~~~
 > > {: .output}
 > >
 > > We then can create our `line_width` vector setting each of the
-> > levels to the desired thickness.
+> > values to the desired thickness.
 > >
 > > 
 > > ~~~
@@ -556,9 +554,9 @@ elements to specify labels and colors:
 
 * `bottomright`: We specify the location of our legend by using a default
 keyword. We could also use `top`, `topright`, etc.
-* `levels(objectName$attributeName)`: Label the legend elements using the
-categories of levels in an attribute (e.g., levels(lines_HARV$TYPE) means use
-the levels boardwalk, footpath, etc).
+* `unique(objectName$attributeName)`: Label the legend elements using the
+categories of an attribute (e.g., unique(lines_HARV$TYPE) means use
+the values boardwalk, footpath, etc).
 * `fill =`: apply unique colors to the boxes in our legend. `palette()` is
 the default set of colors that R applies to all plots.
 
@@ -640,8 +638,8 @@ ggplot() +
 > 
 > > ## Answers
 > >
-> > First we need to make sure that the `BicyclesHo` attribute is a
-> > factor and check how many levels it has.
+> > First we need to see what kind of attribute `BicyclesHo` is and
+> > and check how many unique values it has.
 > >
 > > 
 > > ~~~
@@ -659,14 +657,14 @@ ggplot() +
 > > 
 > > 
 > > ~~~
-> > levels(lines_HARV$BicyclesHo)
+> > unique(lines_HARV$BicyclesHo)
 > > ~~~
 > > {: .language-r}
 > > 
 > > 
 > > 
 > > ~~~
-> > NULL
+> > "Bicycles and Horses Allowed" NA "DO NOT SHOW ON REC MAP" "Bicycles and Horses NOT ALLOWED"
 > > ~~~
 > > {: .output}
 > >
@@ -708,7 +706,7 @@ ggplot() +
 > Apply a fill color to each state using its `region` value. Add a legend.
 >
 > > ## Answers
-> > First we read in the data and check how many levels there are
+> > First we read in the data and check how many unique values there are
 > > in the `region` column:
 > > 
 > > ~~~
@@ -735,14 +733,14 @@ ggplot() +
 > > 
 > > 
 > > ~~~
-> > levels(state_boundary_US$region)
+> > unique(state_boundary_US$region)
 > > ~~~
 > > {: .language-r}
 > > 
 > > 
 > > 
 > > ~~~
-> > NULL
+> > "West"      "Northeast" "Southeast" "Midwest"   "Southwest"
 > > ~~~
 > > {: .output}
 > > Next we set a color vector with that many items: 
