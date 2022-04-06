@@ -7,7 +7,6 @@ exercises: 15
 questions:
 - "How can I create a publication-quality graphic and customize plot parameters?"
 objectives:
-- "Assign custom names to bands in a RasterStack."
 - "Customize raster plots using the `ggplot2` package."
 keypoints:
 - "Use the `theme_void()` function for a clean background to your plot."
@@ -35,7 +34,7 @@ in R to create publication-quality plots.
 
 Not only are publication-quality plots pleasing to look at, but they are also valuable tools that can help highlight the most important part of your research: your results! The process from data cleaning to a final publication is often long and requires several rounds of review and revisions and making plots by hand can be time consuming and leave room for human error. Learning to make publication-quality plots using R can help to streamline this process and make figure revisions a breeze! 
 
-[Timo Grossenbacher](https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/) has a great tutorial that uses `ggplot2` to make some incredible maps. Consider looking over his materials on your own after this workshop! 
+[Timo Grossenbacher](https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/) has a great tutorial that uses `ggplot2` to make some incredible maps. Consider looking over these materials on your own after this workshop.
 
 <img src="../images/timo_grossenbacher.png" title="plot developed by Timo Grossenbacher" alt="plot developed by Timo Grossenbacher that shows the average age in Swiss municipalities in 2015" width="612" style="display: block; margin: auto;" />
 
@@ -58,8 +57,6 @@ ggplot() +
 {: .language-r}
 
 <img src="../fig/rmd-13-study_site.png" title="plot of study site location in the contiguous US" alt="plot of study site location in the contiguous US" width="612" style="display: block; margin: auto;" />
-
-That looks much better! 
 
 Note that to center our plot title, we needed to do this **after** the `theme_void()` layer, because R interprets the `ggplot` layers in order. If we first tell R to center our plot title, and then set the theme to `void`, any adjustments we've made to the plot theme will be over-written by the `theme_void()` function. So first we make the theme `void` and then we center the title. We center both the title and subtitle by using the `theme()` function and setting the `hjust` parameter to 0.5. The `hjust` parameter stands for "horizontal justification" and takes any value between 
 0 and 1. A setting of 0 indicates left justification and a setting of 1 indicates right justification. 
