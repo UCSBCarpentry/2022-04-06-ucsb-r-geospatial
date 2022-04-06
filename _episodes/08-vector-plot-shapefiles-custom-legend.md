@@ -172,14 +172,14 @@ symbol of `shape` value.
 > > 
 > > 
 > > ~~~
-> > levels(plot_locations$soilTypeOr)
+> > unique(plot_locations$soilTypeOr)
 > > ~~~
 > > {: .language-r}
 > > 
 > > 
 > > 
 > > ~~~
-> > NULL
+> > "Inceptisols" "Histosols"
 > > ~~~
 > > {: .output}
 > >
