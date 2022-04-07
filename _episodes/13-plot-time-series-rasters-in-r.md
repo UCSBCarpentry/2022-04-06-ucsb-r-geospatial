@@ -204,7 +204,7 @@ library(cowplot)
 ggdraw() + 
   draw_plot(study_site, 0, 0, 0.5, 1) + # x position, y position, width, height
   draw_plot(ndvi_plot, 0.5, 0, 0.5, 1) +
-  draw_plot_labels(labels = c("A)", "B)"), x = c(0, 0.5), y = c(1, 1), hjust = 0)
+  draw_plot_label(label = c("A)", "B)"), x = c(0, 0.5), y = c(1, 1), hjust = 0)
 ~~~
 {: .language-r}
 
